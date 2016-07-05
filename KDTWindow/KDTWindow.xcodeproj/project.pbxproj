@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76C16A141CD4E7AD003DE86F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C16A131CD4E7AD003DE86F /* Foundation.framework */; };
+		76C16A1F1CD4E7AD003DE86F /* KDTWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 76C16A1E1CD4E7AD003DE86F /* KDTWindow.mm */; };
+		76C16B3A1CD4E818003DE86F /* HPProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 76C16AB91CD4E818003DE86F /* HPProtocol.h */; };
+		76C16B3B1CD4E818003DE86F /* NSXPCProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 76C16ABA1CD4E818003DE86F /* NSXPCProxy.h */; };
+		76C16B3C1CD4E818003DE86F /* NSXPCProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C16ABB1CD4E818003DE86F /* NSXPCProxy.m */; };
+		76C16B3D1CD4E818003DE86F /* XPCSerivce.h in Headers */ = {isa = PBXBuildFile; fileRef = 76C16ABC1CD4E818003DE86F /* XPCSerivce.h */; };
+		76C16B3E1CD4E818003DE86F /* XPCSerivce.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C16ABD1CD4E818003DE86F /* XPCSerivce.m */; };
+		76C16B481CD4E87B003DE86F /* HPWindowClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 76C16B3F1CD4E87B003DE86F /* HPWindowClient.h */; };
+		76C16B491CD4E87B003DE86F /* HPWindowClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C16B401CD4E87B003DE86F /* HPWindowClient.m */; };
+		76C16B4A1CD4E87B003DE86F /* KDTNotifyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 76C16B411CD4E87B003DE86F /* KDTNotifyView.h */; };
+		76C16B4B1CD4E87B003DE86F /* KDTNotifyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C16B421CD4E87B003DE86F /* KDTNotifyView.m */; };
+		76C16B4C1CD4E87B003DE86F /* KDTWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 76C16B431CD4E87B003DE86F /* KDTWindow.h */; };
+		76C16B4D1CD4E87B003DE86F /* KDTWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C16B441CD4E87B003DE86F /* KDTWindow.m */; };
+		76C16B4E1CD4E87B003DE86F /* PrivateHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 76C16B451CD4E87B003DE86F /* PrivateHeader.h */; };
+		76C16B4F1CD4E87B003DE86F /* WDMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = 76C16B461CD4E87B003DE86F /* WDMenuView.h */; };
+		76C16B501CD4E87B003DE86F /* WDMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C16B471CD4E87B003DE86F /* WDMenuView.m */; };
+		76C16B521CD4E90B003DE86F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C16B511CD4E90B003DE86F /* IOKit.framework */; };
+		76C16B541CD4E936003DE86F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C16B531CD4E936003DE86F /* QuartzCore.framework */; };
+		76C16B561CD4E95B003DE86F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C16B551CD4E95B003DE86F /* CoreGraphics.framework */; };
+		76C16B581CD4E96C003DE86F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C16B571CD4E96C003DE86F /* UIKit.framework */; };
+		76C16B5A1CD4E994003DE86F /* SpringBoardServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C16B591CD4E994003DE86F /* SpringBoardServices.framework */; };
+		76C16B5C1CD4E9A9003DE86F /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C16B5B1CD4E9A9003DE86F /* libsubstrate.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		76C16A101CD4E7AD003DE86F /* KDTWindow.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = KDTWindow.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		76C16A131CD4E7AD003DE86F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		76C16A181CD4E7AD003DE86F /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		76C16A191CD4E7AD003DE86F /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		76C16A1B1CD4E7AD003DE86F /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		76C16A1C1CD4E7AD003DE86F /* KDTWindow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KDTWindow-Prefix.pch"; sourceTree = "<group>"; };
+		76C16A1D1CD4E7AD003DE86F /* KDTWindow.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = KDTWindow.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		76C16A1E1CD4E7AD003DE86F /* KDTWindow.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = KDTWindow.mm; sourceTree = "<group>"; };
+		76C16A231CD4E7AD003DE86F /* KDTWindow.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = KDTWindow.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/KDTWindow.plist; sourceTree = "<group>"; };
+		76C16AB91CD4E818003DE86F /* HPProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPProtocol.h; sourceTree = "<group>"; };
+		76C16ABA1CD4E818003DE86F /* NSXPCProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSXPCProxy.h; sourceTree = "<group>"; };
+		76C16ABB1CD4E818003DE86F /* NSXPCProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSXPCProxy.m; sourceTree = "<group>"; };
+		76C16ABC1CD4E818003DE86F /* XPCSerivce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPCSerivce.h; sourceTree = "<group>"; };
+		76C16ABD1CD4E818003DE86F /* XPCSerivce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPCSerivce.m; sourceTree = "<group>"; };
+		76C16B3F1CD4E87B003DE86F /* HPWindowClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPWindowClient.h; sourceTree = "<group>"; };
+		76C16B401CD4E87B003DE86F /* HPWindowClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPWindowClient.m; sourceTree = "<group>"; };
+		76C16B411CD4E87B003DE86F /* KDTNotifyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDTNotifyView.h; sourceTree = "<group>"; };
+		76C16B421CD4E87B003DE86F /* KDTNotifyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDTNotifyView.m; sourceTree = "<group>"; };
+		76C16B431CD4E87B003DE86F /* KDTWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDTWindow.h; sourceTree = "<group>"; };
+		76C16B441CD4E87B003DE86F /* KDTWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDTWindow.m; sourceTree = "<group>"; };
+		76C16B451CD4E87B003DE86F /* PrivateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateHeader.h; sourceTree = "<group>"; };
+		76C16B461CD4E87B003DE86F /* WDMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDMenuView.h; sourceTree = "<group>"; };
+		76C16B471CD4E87B003DE86F /* WDMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDMenuView.m; sourceTree = "<group>"; };
+		76C16B511CD4E90B003DE86F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		76C16B531CD4E936003DE86F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		76C16B551CD4E95B003DE86F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		76C16B571CD4E96C003DE86F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		76C16B591CD4E994003DE86F /* SpringBoardServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpringBoardServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/PrivateFrameworks/SpringBoardServices.framework; sourceTree = DEVELOPER_DIR; };
+		76C16B5B1CD4E9A9003DE86F /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76C16A0C1CD4E7AD003DE86F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76C16B5C1CD4E9A9003DE86F /* libsubstrate.dylib in Frameworks */,
+				76C16B5A1CD4E994003DE86F /* SpringBoardServices.framework in Frameworks */,
+				76C16B581CD4E96C003DE86F /* UIKit.framework in Frameworks */,
+				76C16A141CD4E7AD003DE86F /* Foundation.framework in Frameworks */,
+				76C16B561CD4E95B003DE86F /* CoreGraphics.framework in Frameworks */,
+				76C16B541CD4E936003DE86F /* QuartzCore.framework in Frameworks */,
+				76C16B521CD4E90B003DE86F /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76C16A051CD4E7AD003DE86F = {
+			isa = PBXGroup;
+			children = (
+				76C16A291CD4E818003DE86F /* 3rd */,
+				76C16A151CD4E7AD003DE86F /* KDTWindow */,
+				76C16A121CD4E7AD003DE86F /* Frameworks */,
+				76C16A111CD4E7AD003DE86F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76C16A111CD4E7AD003DE86F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76C16A101CD4E7AD003DE86F /* KDTWindow.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76C16A121CD4E7AD003DE86F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76C16B5B1CD4E9A9003DE86F /* libsubstrate.dylib */,
+				76C16B591CD4E994003DE86F /* SpringBoardServices.framework */,
+				76C16B571CD4E96C003DE86F /* UIKit.framework */,
+				76C16B551CD4E95B003DE86F /* CoreGraphics.framework */,
+				76C16B531CD4E936003DE86F /* QuartzCore.framework */,
+				76C16B511CD4E90B003DE86F /* IOKit.framework */,
+				76C16A131CD4E7AD003DE86F /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76C16A151CD4E7AD003DE86F /* KDTWindow */ = {
+			isa = PBXGroup;
+			children = (
+				76C16B3F1CD4E87B003DE86F /* HPWindowClient.h */,
+				76C16B401CD4E87B003DE86F /* HPWindowClient.m */,
+				76C16B411CD4E87B003DE86F /* KDTNotifyView.h */,
+				76C16B421CD4E87B003DE86F /* KDTNotifyView.m */,
+				76C16B431CD4E87B003DE86F /* KDTWindow.h */,
+				76C16B441CD4E87B003DE86F /* KDTWindow.m */,
+				76C16B461CD4E87B003DE86F /* WDMenuView.h */,
+				76C16B471CD4E87B003DE86F /* WDMenuView.m */,
+				76C16A1D1CD4E7AD003DE86F /* KDTWindow.xm */,
+				76C16A1E1CD4E7AD003DE86F /* KDTWindow.mm */,
+				76C16A161CD4E7AD003DE86F /* Package */,
+				76C16A1A1CD4E7AD003DE86F /* Supporting Files */,
+			);
+			path = KDTWindow;
+			sourceTree = "<group>";
+		};
+		76C16A161CD4E7AD003DE86F /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				76C16A171CD4E7AD003DE86F /* DEBIAN */,
+				76C16A201CD4E7AD003DE86F /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		76C16A171CD4E7AD003DE86F /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				76C16A181CD4E7AD003DE86F /* control.txt */,
+				76C16A191CD4E7AD003DE86F /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		76C16A1A1CD4E7AD003DE86F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76C16B451CD4E87B003DE86F /* PrivateHeader.h */,
+				76C16A1B1CD4E7AD003DE86F /* PackageVersion.plist */,
+				76C16A1C1CD4E7AD003DE86F /* KDTWindow-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76C16A201CD4E7AD003DE86F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				76C16A211CD4E7AD003DE86F /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		76C16A211CD4E7AD003DE86F /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				76C16A221CD4E7AD003DE86F /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		76C16A221CD4E7AD003DE86F /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				76C16A231CD4E7AD003DE86F /* KDTWindow.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		76C16A291CD4E818003DE86F /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				76C16AB81CD4E818003DE86F /* XPCExt */,
+			);
+			name = 3rd;
+			path = ../3rd;
+			sourceTree = "<group>";
+		};
+		76C16AB81CD4E818003DE86F /* XPCExt */ = {
+			isa = PBXGroup;
+			children = (
+				76C16AB91CD4E818003DE86F /* HPProtocol.h */,
+				76C16ABA1CD4E818003DE86F /* NSXPCProxy.h */,
+				76C16ABB1CD4E818003DE86F /* NSXPCProxy.m */,
+				76C16ABC1CD4E818003DE86F /* XPCSerivce.h */,
+				76C16ABD1CD4E818003DE86F /* XPCSerivce.m */,
+			);
+			path = XPCExt;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		76C16A0D1CD4E7AD003DE86F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76C16B4C1CD4E87B003DE86F /* KDTWindow.h in Headers */,
+				76C16B4E1CD4E87B003DE86F /* PrivateHeader.h in Headers */,
+				76C16B3B1CD4E818003DE86F /* NSXPCProxy.h in Headers */,
+				76C16B3A1CD4E818003DE86F /* HPProtocol.h in Headers */,
+				76C16B481CD4E87B003DE86F /* HPWindowClient.h in Headers */,
+				76C16B4F1CD4E87B003DE86F /* WDMenuView.h in Headers */,
+				76C16B4A1CD4E87B003DE86F /* KDTNotifyView.h in Headers */,
+				76C16B3D1CD4E818003DE86F /* XPCSerivce.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		76C16A0F1CD4E7AD003DE86F /* KDTWindow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76C16A261CD4E7AD003DE86F /* Build configuration list for PBXNativeTarget "KDTWindow" */;
+			buildPhases = (
+				76C16A0A1CD4E7AD003DE86F /* ShellScript */,
+				76C16A0B1CD4E7AD003DE86F /* Sources */,
+				76C16A0C1CD4E7AD003DE86F /* Frameworks */,
+				76C16A0D1CD4E7AD003DE86F /* Headers */,
+				76C16A0E1CD4E7AD003DE86F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KDTWindow;
+			productName = KDTWindow;
+			productReference = 76C16A101CD4E7AD003DE86F /* KDTWindow.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76C16A061CD4E7AD003DE86F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				TargetAttributes = {
+					76C16A0F1CD4E7AD003DE86F = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 76C16A091CD4E7AD003DE86F /* Build configuration list for PBXProject "KDTWindow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 76C16A051CD4E7AD003DE86F;
+			productRefGroup = 76C16A111CD4E7AD003DE86F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76C16A0F1CD4E7AD003DE86F /* KDTWindow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76C16A0A1CD4E7AD003DE86F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		76C16A0E1CD4E7AD003DE86F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76C16A0B1CD4E7AD003DE86F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76C16B3C1CD4E818003DE86F /* NSXPCProxy.m in Sources */,
+				76C16B501CD4E87B003DE86F /* WDMenuView.m in Sources */,
+				76C16B3E1CD4E818003DE86F /* XPCSerivce.m in Sources */,
+				76C16A1F1CD4E7AD003DE86F /* KDTWindow.mm in Sources */,
+				76C16B4D1CD4E87B003DE86F /* KDTWindow.m in Sources */,
+				76C16B4B1CD4E87B003DE86F /* KDTNotifyView.m in Sources */,
+				76C16B491CD4E87B003DE86F /* HPWindowClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		76C16A241CD4E7AD003DE86F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		76C16A251CD4E7AD003DE86F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		76C16A271CD4E7AD003DE86F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks",
+					"$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/PrivateFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KDTWindow/KDTWindow-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/include/**",
+					"$(SRCROOT)/3rd/MacHeader",
+					"$(SRCROOT)/3rd/",
+				);
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SEPARATE_STRIP = YES;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = all;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		76C16A281CD4E7AD003DE86F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks",
+					"$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/PrivateFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KDTWindow/KDTWindow-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/include/**",
+					"$(SRCROOT)/3rd/MacHeader",
+					"$(SRCROOT)/3rd/",
+				);
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SEPARATE_STRIP = YES;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = all;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76C16A091CD4E7AD003DE86F /* Build configuration list for PBXProject "KDTWindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76C16A241CD4E7AD003DE86F /* Debug */,
+				76C16A251CD4E7AD003DE86F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76C16A261CD4E7AD003DE86F /* Build configuration list for PBXNativeTarget "KDTWindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76C16A271CD4E7AD003DE86F /* Debug */,
+				76C16A281CD4E7AD003DE86F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76C16A061CD4E7AD003DE86F /* Project object */;
+}

@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76079BE71CA7FED400B331EA /* HPScriptService.h in Headers */ = {isa = PBXBuildFile; fileRef = 76079BE51CA7FED400B331EA /* HPScriptService.h */; };
+		76079BE81CA7FED400B331EA /* HPScriptService.m in Sources */ = {isa = PBXBuildFile; fileRef = 76079BE61CA7FED400B331EA /* HPScriptService.m */; };
+		76079BEC1CA80BE300B331EA /* IOHIDEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 76079BEA1CA80BE300B331EA /* IOHIDEvent.h */; };
+		76079BED1CA80BE300B331EA /* IOHIDEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 76079BEB1CA80BE300B331EA /* IOHIDEvent.m */; };
+		76079BEF1CA8196D00B331EA /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76079BEE1CA8196D00B331EA /* IOKit.framework */; };
+		761B95AE1CE3185D00F069DC /* KDTLicenceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 761B95AC1CE3185D00F069DC /* KDTLicenceManager.h */; };
+		761B95AF1CE3185D00F069DC /* KDTLicenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 761B95AD1CE3185D00F069DC /* KDTLicenceManager.m */; };
+		761B95D31CE34DFD00F069DC /* libMobileGestalt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 761B95D21CE34DFD00F069DC /* libMobileGestalt.dylib */; };
+		761B95D51CE34E2200F069DC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 761B95D41CE34E2200F069DC /* libz.dylib */; };
+		761B95D71CE34E2600F069DC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761B95D61CE34E2600F069DC /* CFNetwork.framework */; };
+		761B95D91CE34E4300F069DC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761B95D81CE34E4300F069DC /* Security.framework */; };
+		761B95DB1CE34E5000F069DC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761B95DA1CE34E5000F069DC /* SystemConfiguration.framework */; };
+		761B95DD1CE34E6700F069DC /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761B95DC1CE34E6700F069DC /* MobileCoreServices.framework */; };
+		761B95DF1CE34EC100F069DC /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 761B95DE1CE34EC100F069DC /* libicucore.dylib */; };
+		761B95E21CE34F6C00F069DC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761B95E11CE34F6C00F069DC /* QuartzCore.framework */; };
+		761B968D1CE3506100F069DC /* XPCSerivce.m in Sources */ = {isa = PBXBuildFile; fileRef = 761B968C1CE3501C00F069DC /* XPCSerivce.m */; };
+		761B968F1CE3507E00F069DC /* NSXPCProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 761B968A1CE3501C00F069DC /* NSXPCProxy.m */; };
+		761B96901CE350A400F069DC /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 761B95FE1CE3501B00F069DC /* ASIDataCompressor.m */; };
+		761B96911CE350B300F069DC /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 761B96061CE3501B00F069DC /* ASIHTTPRequest.m */; };
+		761B96921CE350B700F069DC /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 761B960C1CE3501B00F069DC /* ASINetworkQueue.m */; };
+		761B96941CE350C700F069DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761B96931CE350C700F069DC /* UIKit.framework */; };
+		761B96951CE350DD00F069DC /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 761B95FB1CE3501B00F069DC /* ASIAuthenticationDialog.m */; };
+		761B96961CE350EB00F069DC /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 761B960A1CE3501B00F069DC /* ASIInputStream.m */; };
+		761B96971CE3510200F069DC /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 761B96021CE3501B00F069DC /* ASIDownloadCache.m */; };
+		761B96991CE3511E00F069DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761B96981CE3511E00F069DC /* CoreGraphics.framework */; };
+		761B969A1CE351CB00F069DC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 761B96171CE3501B00F069DC /* Reachability.m */; };
+		761B969B1CE351D900F069DC /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 761B96001CE3501B00F069DC /* ASIDataDecompressor.m */; };
+		7625041E1CEAE7F300A9CF01 /* LogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7625041D1CEAE7F300A9CF01 /* LogManager.m */; };
+		762504201CEAE7FB00A9CF01 /* LogManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7625041F1CEAE7FB00A9CF01 /* LogManager.h */; };
+		763B36A91CCFA5B800CD08E3 /* HPSpringBoardService.h in Headers */ = {isa = PBXBuildFile; fileRef = 763B36A71CCFA5B800CD08E3 /* HPSpringBoardService.h */; };
+		763B36AA1CCFA5B800CD08E3 /* HPSpringBoardService.m in Sources */ = {isa = PBXBuildFile; fileRef = 763B36A81CCFA5B800CD08E3 /* HPSpringBoardService.m */; };
+		76B670B81CA7D5E0006438A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B670B71CA7D5E0006438A8 /* Foundation.framework */; };
+		76B670C21CA7D5E0006438A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B670C11CA7D5E0006438A8 /* main.m */; };
+		76B670E61CA7EC40006438A8 /* HPLocalService.h in Headers */ = {isa = PBXBuildFile; fileRef = 76B670E41CA7EC40006438A8 /* HPLocalService.h */; };
+		76B670E71CA7EC40006438A8 /* HPLocalService.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B670E51CA7EC40006438A8 /* HPLocalService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		76079BE51CA7FED400B331EA /* HPScriptService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPScriptService.h; sourceTree = "<group>"; };
+		76079BE61CA7FED400B331EA /* HPScriptService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPScriptService.m; sourceTree = "<group>"; };
+		76079BEA1CA80BE300B331EA /* IOHIDEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDEvent.h; sourceTree = "<group>"; };
+		76079BEB1CA80BE300B331EA /* IOHIDEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOHIDEvent.m; sourceTree = "<group>"; };
+		76079BEE1CA8196D00B331EA /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		761B95AC1CE3185D00F069DC /* KDTLicenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDTLicenceManager.h; sourceTree = "<group>"; };
+		761B95AD1CE3185D00F069DC /* KDTLicenceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDTLicenceManager.m; sourceTree = "<group>"; };
+		761B95D01CE34DF300F069DC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		761B95D21CE34DFD00F069DC /* libMobileGestalt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libMobileGestalt.dylib; path = usr/lib/libMobileGestalt.dylib; sourceTree = SDKROOT; };
+		761B95D41CE34E2200F069DC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		761B95D61CE34E2600F069DC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		761B95D81CE34E4300F069DC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		761B95DA1CE34E5000F069DC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		761B95DC1CE34E6700F069DC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		761B95DE1CE34EC100F069DC /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		761B95E11CE34F6C00F069DC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		761B95FA1CE3501B00F069DC /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		761B95FB1CE3501B00F069DC /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		761B95FC1CE3501B00F069DC /* ASICacheDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		761B95FD1CE3501B00F069DC /* ASIDataCompressor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		761B95FE1CE3501B00F069DC /* ASIDataCompressor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		761B95FF1CE3501B00F069DC /* ASIDataDecompressor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		761B96001CE3501B00F069DC /* ASIDataDecompressor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		761B96011CE3501B00F069DC /* ASIDownloadCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		761B96021CE3501B00F069DC /* ASIDownloadCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		761B96031CE3501B00F069DC /* ASIFormDataRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		761B96041CE3501B00F069DC /* ASIFormDataRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		761B96051CE3501B00F069DC /* ASIHTTPRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		761B96061CE3501B00F069DC /* ASIHTTPRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		761B96071CE3501B00F069DC /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		761B96081CE3501B00F069DC /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		761B96091CE3501B00F069DC /* ASIInputStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		761B960A1CE3501B00F069DC /* ASIInputStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		761B960B1CE3501B00F069DC /* ASINetworkQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		761B960C1CE3501B00F069DC /* ASINetworkQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		761B960D1CE3501B00F069DC /* ASIProgressDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		761B96141CE3501B00F069DC /* README-GHUnit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "README-GHUnit"; sourceTree = "<group>"; };
+		761B96161CE3501B00F069DC /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		761B96171CE3501B00F069DC /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		761B96881CE3501C00F069DC /* HPProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPProtocol.h; sourceTree = "<group>"; };
+		761B96891CE3501C00F069DC /* NSXPCProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSXPCProxy.h; sourceTree = "<group>"; };
+		761B968A1CE3501C00F069DC /* NSXPCProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSXPCProxy.m; sourceTree = "<group>"; };
+		761B968B1CE3501C00F069DC /* XPCSerivce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPCSerivce.h; sourceTree = "<group>"; };
+		761B968C1CE3501C00F069DC /* XPCSerivce.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPCSerivce.m; sourceTree = "<group>"; };
+		761B96931CE350C700F069DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		761B96981CE3511E00F069DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7625041D1CEAE7F300A9CF01 /* LogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogManager.m; sourceTree = "<group>"; };
+		7625041F1CEAE7FB00A9CF01 /* LogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogManager.h; sourceTree = "<group>"; };
+		763B36A71CCFA5B800CD08E3 /* HPSpringBoardService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPSpringBoardService.h; sourceTree = "<group>"; };
+		763B36A81CCFA5B800CD08E3 /* HPSpringBoardService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPSpringBoardService.m; sourceTree = "<group>"; };
+		76B670B41CA7D5E0006438A8 /* KDTService */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KDTService; sourceTree = BUILT_PRODUCTS_DIR; };
+		76B670B71CA7D5E0006438A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		76B670BC1CA7D5E0006438A8 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		76B670BD1CA7D5E0006438A8 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		76B670BF1CA7D5E0006438A8 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		76B670C01CA7D5E0006438A8 /* KDTService-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KDTService-Prefix.pch"; sourceTree = "<group>"; };
+		76B670C11CA7D5E0006438A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		76B670C51CA7D5E0006438A8 /* com.kdt.cn.KDTService.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = com.kdt.cn.KDTService.plist; path = Package/Library/LaunchDaemons/com.kdt.cn.KDTService.plist; sourceTree = "<group>"; };
+		76B670C61CA7D5E0006438A8 /* postinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postinst; path = Package/DEBIAN/postinst; sourceTree = "<group>"; };
+		76B670C71CA7D5E0006438A8 /* prerm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = prerm; path = Package/DEBIAN/prerm; sourceTree = "<group>"; };
+		76B670E41CA7EC40006438A8 /* HPLocalService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPLocalService.h; sourceTree = "<group>"; };
+		76B670E51CA7EC40006438A8 /* HPLocalService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPLocalService.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76B670B01CA7D5E0006438A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				761B96991CE3511E00F069DC /* CoreGraphics.framework in Frameworks */,
+				761B96941CE350C700F069DC /* UIKit.framework in Frameworks */,
+				761B95E21CE34F6C00F069DC /* QuartzCore.framework in Frameworks */,
+				761B95DF1CE34EC100F069DC /* libicucore.dylib in Frameworks */,
+				761B95DD1CE34E6700F069DC /* MobileCoreServices.framework in Frameworks */,
+				761B95DB1CE34E5000F069DC /* SystemConfiguration.framework in Frameworks */,
+				761B95D91CE34E4300F069DC /* Security.framework in Frameworks */,
+				761B95D71CE34E2600F069DC /* CFNetwork.framework in Frameworks */,
+				761B95D51CE34E2200F069DC /* libz.dylib in Frameworks */,
+				761B95D31CE34DFD00F069DC /* libMobileGestalt.dylib in Frameworks */,
+				76079BEF1CA8196D00B331EA /* IOKit.framework in Frameworks */,
+				76B670B81CA7D5E0006438A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76079BE91CA80BE300B331EA /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				76079BEA1CA80BE300B331EA /* IOHIDEvent.h */,
+				76079BEB1CA80BE300B331EA /* IOHIDEvent.m */,
+			);
+			name = lib;
+			path = IOHIDEvent;
+			sourceTree = "<group>";
+		};
+		761B95F71CE3501B00F069DC /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				761B95F81CE3501B00F069DC /* ASIHTTPRequest */,
+				761B96871CE3501C00F069DC /* XPCExt */,
+			);
+			name = 3rd;
+			path = ../../3rd;
+			sourceTree = "<group>";
+		};
+		761B95F81CE3501B00F069DC /* ASIHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				761B95F91CE3501B00F069DC /* Classes */,
+				761B96121CE3501B00F069DC /* External */,
+			);
+			path = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+		761B95F91CE3501B00F069DC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				761B95FA1CE3501B00F069DC /* ASIAuthenticationDialog.h */,
+				761B95FB1CE3501B00F069DC /* ASIAuthenticationDialog.m */,
+				761B95FC1CE3501B00F069DC /* ASICacheDelegate.h */,
+				761B95FD1CE3501B00F069DC /* ASIDataCompressor.h */,
+				761B95FE1CE3501B00F069DC /* ASIDataCompressor.m */,
+				761B95FF1CE3501B00F069DC /* ASIDataDecompressor.h */,
+				761B96001CE3501B00F069DC /* ASIDataDecompressor.m */,
+				761B96011CE3501B00F069DC /* ASIDownloadCache.h */,
+				761B96021CE3501B00F069DC /* ASIDownloadCache.m */,
+				761B96031CE3501B00F069DC /* ASIFormDataRequest.h */,
+				761B96041CE3501B00F069DC /* ASIFormDataRequest.m */,
+				761B96051CE3501B00F069DC /* ASIHTTPRequest.h */,
+				761B96061CE3501B00F069DC /* ASIHTTPRequest.m */,
+				761B96071CE3501B00F069DC /* ASIHTTPRequestConfig.h */,
+				761B96081CE3501B00F069DC /* ASIHTTPRequestDelegate.h */,
+				761B96091CE3501B00F069DC /* ASIInputStream.h */,
+				761B960A1CE3501B00F069DC /* ASIInputStream.m */,
+				761B960B1CE3501B00F069DC /* ASINetworkQueue.h */,
+				761B960C1CE3501B00F069DC /* ASINetworkQueue.m */,
+				761B960D1CE3501B00F069DC /* ASIProgressDelegate.h */,
+				761B960E1CE3501B00F069DC /* ASIWebPageRequest */,
+				761B960F1CE3501B00F069DC /* CloudFiles */,
+				761B96101CE3501B00F069DC /* S3 */,
+				761B96111CE3501B00F069DC /* Tests */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		761B960E1CE3501B00F069DC /* ASIWebPageRequest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ASIWebPageRequest;
+			sourceTree = "<group>";
+		};
+		761B960F1CE3501B00F069DC /* CloudFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CloudFiles;
+			sourceTree = "<group>";
+		};
+		761B96101CE3501B00F069DC /* S3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = S3;
+			sourceTree = "<group>";
+		};
+		761B96111CE3501B00F069DC /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		761B96121CE3501B00F069DC /* External */ = {
+			isa = PBXGroup;
+			children = (
+				761B96131CE3501B00F069DC /* GHUnit */,
+				761B96151CE3501B00F069DC /* Reachability */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		761B96131CE3501B00F069DC /* GHUnit */ = {
+			isa = PBXGroup;
+			children = (
+				761B96141CE3501B00F069DC /* README-GHUnit */,
+			);
+			path = GHUnit;
+			sourceTree = "<group>";
+		};
+		761B96151CE3501B00F069DC /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				761B96161CE3501B00F069DC /* Reachability.h */,
+				761B96171CE3501B00F069DC /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		761B96871CE3501C00F069DC /* XPCExt */ = {
+			isa = PBXGroup;
+			children = (
+				761B96881CE3501C00F069DC /* HPProtocol.h */,
+				761B96891CE3501C00F069DC /* NSXPCProxy.h */,
+				761B968A1CE3501C00F069DC /* NSXPCProxy.m */,
+				761B968B1CE3501C00F069DC /* XPCSerivce.h */,
+				761B968C1CE3501C00F069DC /* XPCSerivce.m */,
+			);
+			path = XPCExt;
+			sourceTree = "<group>";
+		};
+		76B670AA1CA7D5E0006438A8 = {
+			isa = PBXGroup;
+			children = (
+				76B670B91CA7D5E0006438A8 /* KDTService */,
+				76B670B61CA7D5E0006438A8 /* Frameworks */,
+				76B670B51CA7D5E0006438A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76B670B51CA7D5E0006438A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76B670B41CA7D5E0006438A8 /* KDTService */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76B670B61CA7D5E0006438A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				761B96981CE3511E00F069DC /* CoreGraphics.framework */,
+				761B96931CE350C700F069DC /* UIKit.framework */,
+				761B95E11CE34F6C00F069DC /* QuartzCore.framework */,
+				761B95DE1CE34EC100F069DC /* libicucore.dylib */,
+				761B95DC1CE34E6700F069DC /* MobileCoreServices.framework */,
+				761B95DA1CE34E5000F069DC /* SystemConfiguration.framework */,
+				761B95D81CE34E4300F069DC /* Security.framework */,
+				761B95D61CE34E2600F069DC /* CFNetwork.framework */,
+				761B95D41CE34E2200F069DC /* libz.dylib */,
+				761B95D21CE34DFD00F069DC /* libMobileGestalt.dylib */,
+				761B95D01CE34DF300F069DC /* AdSupport.framework */,
+				76079BEE1CA8196D00B331EA /* IOKit.framework */,
+				76B670B71CA7D5E0006438A8 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76B670B91CA7D5E0006438A8 /* KDTService */ = {
+			isa = PBXGroup;
+			children = (
+				761B95F71CE3501B00F069DC /* 3rd */,
+				76079BE91CA80BE300B331EA /* lib */,
+				761B95AC1CE3185D00F069DC /* KDTLicenceManager.h */,
+				761B95AD1CE3185D00F069DC /* KDTLicenceManager.m */,
+				7625041F1CEAE7FB00A9CF01 /* LogManager.h */,
+				7625041D1CEAE7F300A9CF01 /* LogManager.m */,
+				76B670E41CA7EC40006438A8 /* HPLocalService.h */,
+				76B670E51CA7EC40006438A8 /* HPLocalService.m */,
+				76079BE51CA7FED400B331EA /* HPScriptService.h */,
+				76079BE61CA7FED400B331EA /* HPScriptService.m */,
+				763B36A71CCFA5B800CD08E3 /* HPSpringBoardService.h */,
+				763B36A81CCFA5B800CD08E3 /* HPSpringBoardService.m */,
+				76B670D11CA7EA01006438A8 /* IOHIDEvent */,
+				76B670C11CA7D5E0006438A8 /* main.m */,
+				76B670BA1CA7D5E0006438A8 /* Package */,
+				76B670BE1CA7D5E0006438A8 /* Supporting Files */,
+			);
+			path = KDTService;
+			sourceTree = "<group>";
+		};
+		76B670BA1CA7D5E0006438A8 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				76B670BB1CA7D5E0006438A8 /* DEBIAN */,
+				76B670C31CA7D5E0006438A8 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		76B670BB1CA7D5E0006438A8 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				76B670BC1CA7D5E0006438A8 /* control.txt */,
+				76B670BD1CA7D5E0006438A8 /* control */,
+				76B670C61CA7D5E0006438A8 /* postinst */,
+				76B670C71CA7D5E0006438A8 /* prerm */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		76B670BE1CA7D5E0006438A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76B670BF1CA7D5E0006438A8 /* PackageVersion.plist */,
+				76B670C01CA7D5E0006438A8 /* KDTService-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76B670C31CA7D5E0006438A8 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				76B670C41CA7D5E0006438A8 /* LaunchDaemons */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		76B670C41CA7D5E0006438A8 /* LaunchDaemons */ = {
+			isa = PBXGroup;
+			children = (
+				76B670C51CA7D5E0006438A8 /* com.kdt.cn.KDTService.plist */,
+			);
+			name = LaunchDaemons;
+			sourceTree = "<group>";
+		};
+		76B670D11CA7EA01006438A8 /* IOHIDEvent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IOHIDEvent;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		76B670B11CA7D5E0006438A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76079BE71CA7FED400B331EA /* HPScriptService.h in Headers */,
+				761B95AE1CE3185D00F069DC /* KDTLicenceManager.h in Headers */,
+				76B670E61CA7EC40006438A8 /* HPLocalService.h in Headers */,
+				76079BEC1CA80BE300B331EA /* IOHIDEvent.h in Headers */,
+				763B36A91CCFA5B800CD08E3 /* HPSpringBoardService.h in Headers */,
+				762504201CEAE7FB00A9CF01 /* LogManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		76B670B31CA7D5E0006438A8 /* KDTService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76B670CA1CA7D5E0006438A8 /* Build configuration list for PBXNativeTarget "KDTService" */;
+			buildPhases = (
+				76B670AF1CA7D5E0006438A8 /* Sources */,
+				76B670B01CA7D5E0006438A8 /* Frameworks */,
+				76B670B11CA7D5E0006438A8 /* Headers */,
+				76B670B21CA7D5E0006438A8 /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KDTService;
+			productName = KDTService;
+			productReference = 76B670B41CA7D5E0006438A8 /* KDTService */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76B670AB1CA7D5E0006438A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				TargetAttributes = {
+					76B670B31CA7D5E0006438A8 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 76B670AE1CA7D5E0006438A8 /* Build configuration list for PBXProject "KDTService" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 76B670AA1CA7D5E0006438A8;
+			productRefGroup = 76B670B51CA7D5E0006438A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76B670B31CA7D5E0006438A8 /* KDTService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76B670B21CA7D5E0006438A8 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "strip \"$TARGET_BUILD_DIR/$TARGET_NAME\"\ncp \"$SRCROOT/$TARGET_NAME/ent.xml\" \"$TARGET_BUILD_DIR\"\ncd \"$TARGET_BUILD_DIR\"\nldid -Sent.xml \"$TARGET_BUILD_DIR/$TARGET_NAME\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76B670AF1CA7D5E0006438A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				761B96951CE350DD00F069DC /* ASIAuthenticationDialog.m in Sources */,
+				7625041E1CEAE7F300A9CF01 /* LogManager.m in Sources */,
+				761B969B1CE351D900F069DC /* ASIDataDecompressor.m in Sources */,
+				761B96901CE350A400F069DC /* ASIDataCompressor.m in Sources */,
+				761B96911CE350B300F069DC /* ASIHTTPRequest.m in Sources */,
+				761B96921CE350B700F069DC /* ASINetworkQueue.m in Sources */,
+				761B96971CE3510200F069DC /* ASIDownloadCache.m in Sources */,
+				761B96961CE350EB00F069DC /* ASIInputStream.m in Sources */,
+				761B969A1CE351CB00F069DC /* Reachability.m in Sources */,
+				763B36AA1CCFA5B800CD08E3 /* HPSpringBoardService.m in Sources */,
+				76079BED1CA80BE300B331EA /* IOHIDEvent.m in Sources */,
+				761B968F1CE3507E00F069DC /* NSXPCProxy.m in Sources */,
+				761B968D1CE3506100F069DC /* XPCSerivce.m in Sources */,
+				76079BE81CA7FED400B331EA /* HPScriptService.m in Sources */,
+				76B670E71CA7EC40006438A8 /* HPLocalService.m in Sources */,
+				76B670C21CA7D5E0006438A8 /* main.m in Sources */,
+				761B95AF1CE3185D00F069DC /* KDTLicenceManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		76B670C81CA7D5E0006438A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		76B670C91CA7D5E0006438A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		76B670CB1CA7D5E0006438A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KDTService/KDTService-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.obfuscator.3_4;
+				HEADER_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/include/**",
+					"$(SRCROOT)/3rd/",
+					"$(SRCROOT)/3rd/MacHeader",
+				);
+				INSTALL_PATH = /usr/bin;
+				OTHER_CFLAGS = (
+					"-mllvm",
+					"-fla",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SEPARATE_STRIP = YES;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = all;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		76B670CC1CA7D5E0006438A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KDTService/KDTService-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.obfuscator.3_4;
+				HEADER_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/include/**",
+					"$(SRCROOT)/3rd/",
+					"$(SRCROOT)/3rd/MacHeader",
+				);
+				INSTALL_PATH = /usr/bin;
+				OTHER_CFLAGS = (
+					"-mllvm",
+					"-fla",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SEPARATE_STRIP = YES;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = all;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76B670AE1CA7D5E0006438A8 /* Build configuration list for PBXProject "KDTService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76B670C81CA7D5E0006438A8 /* Debug */,
+				76B670C91CA7D5E0006438A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76B670CA1CA7D5E0006438A8 /* Build configuration list for PBXNativeTarget "KDTService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76B670CB1CA7D5E0006438A8 /* Debug */,
+				76B670CC1CA7D5E0006438A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76B670AB1CA7D5E0006438A8 /* Project object */;
+}

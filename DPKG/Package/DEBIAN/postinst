@@ -1,0 +1,32 @@
+#!/bin/bash
+
+
+
+echo "hp"
+
+chmod 777 /Applications/口袋助手.app/口袋助手
+chmod 777 /usr/bin/KDTPower
+chmod 777 /usr/bin/KDTService
+
+chown -R mobile:mobile /var/mobile/Media/KDTScript
+chown -R mobile:mobile /Applications/口袋助手.app
+chown root:wheel /Library/LaunchDaemons/com.kdt.arhp.plist
+chown root:wheel /usr/bin/KDTPower
+chown root:wheel /usr/bin/KDTService
+
+launchctl load /Library/LaunchDaemons/com.kdt.arhp.plist
+launchctl start com.kdt.arhp
+
+su -c /usr/bin/uicache mobile
+
+declare -a cydia
+cydia=($CYDIA)
+
+if [[ ${CYDIA+@} ]]; then
+        eval "echo 'finish:restart' >&${cydia[0]}"
+else
+		echo "Please respring your device after this!"
+		killall -9 SpringBoard
+fi
+
+exit 0

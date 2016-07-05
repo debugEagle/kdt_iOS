@@ -1,0 +1,29 @@
+//
+// Prefix header for all source files of the 'KDTService' target in the 'KDTService' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
+
+
+#define KDT_DOC_PATH @"/var/mobile/Media/KDTScript"
+#define KDT_SETTINGS_PATH @"/Applications/口袋助手.app/settings.plist"
+
+
+#define NS_String(cstr) [NSString stringWithUTF8String:cstr]
+#define NS_Int(int) [NSNumber numberWithInt:int]
+
+#if 0
+#    define NSLog(fmt,args...) NSLog(fmt,##args)
+#    define WDLog(fmt,args...) NSLog(@"%s:\n"#fmt,__func__,##args)
+#    define SHOWSTACK   NSArray *syms = [NSThread  callStackSymbols];NSLog(@"syms:%@",syms);
+#    define VLog(v) NSLog(@#v":%@",v)
+#    define VLogEx(v,pre) NSLog(@"\n%s{\n"pre#v":%@\n}\n\n", __func__, v)
+#else
+#    define NSLog(...)
+#    define WDLog(fmt,args...)
+#    define SHOWSTACK
+#    define VLog(v)
+#    define VLogEx(v,pre)
+#endif

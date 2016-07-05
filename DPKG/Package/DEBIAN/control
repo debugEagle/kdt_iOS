@@ -1,0 +1,17 @@
+Package: KDT 
+Name: 口袋助手 
+Version: 1.01c
+Description: tool
+Section: System
+Depends: firmware (>= 7.0)
+Conflicts:
+Replaces:
+Priority: optional
+Architecture: iphoneos-arm
+Author: cook
+dev:
+Homepage: www.koudaitool.com
+Depiction: 
+Maintainer:
+Icon:
+

@@ -1,0 +1,14 @@
+#!/bin/sh
+
+if [[ $1 == upgrade ]]; then
+	/bin/launchctl unload /Library/LaunchDaemons/com.kdt.cn.KDTService.plist
+fi
+
+chown root:wheel /usr/bin/__PACKAGENAME__
+chmod 755 /usr/bin/__PACKAGENAME__
+chown root:wheel /Library/LaunchDaemons/com.kdt.cn.KDTService.plist
+chmod 644 /Library/LaunchDaemons/com.kdt.cn.KDTService.plist
+
+/bin/launchctl load /Library/LaunchDaemons/com.kdt.cn.KDTService.plist
+
+exit 0

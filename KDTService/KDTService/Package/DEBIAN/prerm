@@ -1,0 +1,5 @@
+#!/bin/sh
+
+/bin/launchctl unload /Library/LaunchDaemons/com.kdt.cn.KDTService.plist
+
+exit 0

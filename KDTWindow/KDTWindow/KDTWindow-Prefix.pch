@@ -1,0 +1,45 @@
+//
+// Prefix header for all source files of the 'MulitfyTest' target in the 'MulitfyTest' project
+//
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <dlfcn.h>
+#endif
+
+#if 0
+#    define NSLog(fmt,args...) NSLog(fmt,##args)
+#    define WDLog(fmt,args...) NSLog(@"%s:\n"#fmt,__func__,##args)
+#    define SHOWSTACK   NSArray *syms = [NSThread  callStackSymbols];NSLog(@"syms:%@",syms);
+#else
+#    define NSLog(...)
+#    define WDLog(fmt,args...)
+#    define SHOWSTACK
+#endif
+
+#define NS_String(cstr) [NSString stringWithUTF8String:cstr]
+#define NS_Int(int) [NSNumber numberWithInt:int]
+
+#define STL2NS_string(stl_str)\
+[[[NSString alloc] initWithBytes:stl_str length:wcslen(stl_str)*sizeof(wchar_t) encoding:NSUTF32LittleEndianStringEncoding] autorelease]
+
+#define SHOWSTACK2 NSArray *syms = [NSThread  callStackSymbols];\
+if ([syms count] > 1) {\
+for (int i  = 0; i < [syms count]; i++) {\
+NSLog(@"%@",[syms objectAtIndex:i]);\
+};\
+};
+
+
+#define SHOWSTACK3 {\
+NSArray *__syms = [NSThread  callStackSymbols];\
+if ([__syms count] > 1) {\
+for (int i  = 0; i < [__syms count]; i++) {\
+NSString* __sym = [__syms objectAtIndex:i]; \
+NSString* __sub_str = [__sym substringWithRange:NSMakeRange(40, 10)];\
+unsigned long __sym_addr = strtoul([__sub_str UTF8String],0,16);\
+Dl_info __info = {0};\
+dladdr((void*)__sym_addr, &__info);\
+NSLog(@"%s,%p,%s,%p", __info.dli_fname, __info.dli_fbase, __info.dli_sname, __info.dli_saddr);\
+};\
+};}\

@@ -1,0 +1,18 @@
+#!/bin/bash
+echo "清除arhp"
+
+launchctl stop com.kdt.arhp
+launchctl remove com.kdt.arhp
+killall -9 KDTService
+
+declare -a cydia
+cydia=($CYDIA)
+
+if [[ ${CYDIA+@} ]]; then
+        eval "echo 'finish:restart' >&${cydia[0]}"
+else
+        #killall -9 SpringBoard
+        echo "Please respring your device after this!"
+fi
+
+exit 0

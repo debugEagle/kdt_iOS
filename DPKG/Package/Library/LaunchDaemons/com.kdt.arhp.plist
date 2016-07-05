@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.kdt.arhp</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.kdt.arhp.sp</key>
+		<true/>
+		<key>com.kdt.arhp.ctl</key>
+		<true/>
+		<key>com.kdt.arhp.scp</key>
+		<true/>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/bin/KDTService</string>
+	</array>
+	<key>UserName</key>
+	<string>mobile</string>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>KeepAlive</key>
+	<true/>
+</dict>
+</plist>
